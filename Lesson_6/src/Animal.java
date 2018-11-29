@@ -16,29 +16,35 @@ public  class Animal {
      this.swim = swim_distance;
  }
 
+    public Animal(String name, double run_distance, double jump_ )
+    {
+        this.name = name;
+        this.run = run_distance;
+        this.jump = jump_;
+    }
 
-    boolean running(double run_distance)
+    void running(double run_distance)
     {
         if (run_distance < this.run)
-            return true;
+            System.out.println("run true");
         else
-            return false;
+            System.out.println("run false");;
     }
 
-    boolean jumping(double jump_)
+    void jumping(double jump_)
     {
         if (jump_ < this.jump)
-            return true;
+            System.out.println("jump true");
         else
-            return false;
+            System.out.println("jump false");;
     }
 
-    boolean swimming(double swim_distance)
+    void swimming(double swim_distance)
     {
         if (swim_distance < this.swim)
-            return true;
+            System.out.println("swim true");
         else
-            return false;
+            System.out.println("swim false");
     }
 
 

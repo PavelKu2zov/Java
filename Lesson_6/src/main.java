@@ -5,7 +5,8 @@ public class main {
         Cat cat = new Cat("Bazilio", 200, 2);
         Dog dog = new Dog( " Sharik",500,0.5,10);
 
-
+        dog.running(300);
+        cat.swimming(1);
 
     }
 
